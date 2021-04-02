@@ -23,7 +23,7 @@ def sentence_bit_list(sentence):
 
 
 def hide_sentence(sentence, input_file_path, output_file_path="New.png"):
-    print("Hiding sentence...".format(sentence))
+    print("Hiding text...".format(sentence))
     picture = Image.open(input_file_path)
     pixels = picture.load()
 
@@ -65,7 +65,7 @@ def hide_sentence(sentence, input_file_path, output_file_path="New.png"):
         break
 
     if cont >= bit_list_length:
-        print("Sentence hidden successfully.")
+        print("Text hidden successfully.")
     else:
         print("Error: there is no enough space in this picture to save the entire sentence, {} symbols remained".format(
             math.floor((bit_list_length - cont) / 8)))
